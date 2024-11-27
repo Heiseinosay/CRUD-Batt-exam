@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/style/deletestyle.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">search</a>
+        <a href="/addpage">add</a>
+        <a href="/editpage">edit</a>
+        <a href="/deletepage">delete</a>
+    </nav>
+    <h1>Delete page</h1>
+    <label for="bookid"> bookID
+        <input type="text" name="book" id="bookid" placeholder="delete book by ID">
+    </label>
+    <button onclick="deleteRow()">delete</button>
+    <table>
+        <thead>
+            <tr>
+                <th>BookID</th>
+                <th>Title</th>    
+                <th>Genre</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="rows">
+
+        </tbody>
+    </table>
+</body>
+<script src="{{url_for('static', filename='../static/scripts/delete.js')}}"></script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='../static/style/addstyle.css')}}">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">search</a>
+        <a href="/addpage">add</a>
+        <a href="/editpage">edit</a>
+        <a href="/deletepage">delete</a>
+    </nav>
+    <h1>Add book</h1>
+    <label for="input-title">Title:
+        <input type="text" name="title" id="input-title" placeholder="Enter text">
+    </label>
+    <label for="input-genre">Genre:
+        <input type="text" name="genre" id="input-genre" placeholder="Enter text">
+    </label>
+    <label for="input-date">Date:
+        <input type="date" name="genre" id="input-date" placeholder="Enter date">
+    </label>
+    
+    <button onclick="add()">Insert</button>
+
+</body>
+<script src="{{url_for('static', filename='../static/scripts/add.js')}}"></script>
+</html>

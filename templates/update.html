@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">search</a>
+        <a href="/addpage">add</a>
+        <a href="/editpage">edit</a>
+        <a href="/deletepage">delete</a>
+    </nav>  
+    <h1>Edit</h1>
+    <label for="bookID"> BookID
+        <input type="text" name="bookID" id="bookID" placeholder="Search by BookID">
+    </label>
+    <br>
+    <label for="input-title"> Title
+        <input type="text" name="title" id="input-title">
+    </label>
+    <br>
+    <label for="input-genre"> Genre
+        <input type="text" name="genre" id="input-genre" >
+    </label>
+    <br>
+    <label for="input-date"> Date Published
+        <input type="date" name="date" id="input-date"laceholder="">
+    </label>
+    <br>
+    <button id="btn-search" onclick="searchByID()">Search</button>
+    <button id="btn-update" onclick="update()">Update</button>
+</body>
+<script src="{{url_for('static', filename='../static/scripts/update.js')}}"></script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="/">search</a>
+        <a href="/addpage">add</a>
+        <a href="/editpage">edit</a>
+        <a href="/deletepage">delete</a>
+    </nav>
+    <h1>Search Something...</h1>
+    <label for="input-search">
+        <input type="text" name="search" placeholder="Enter the title" id="search-bar">
+    </label>
+    <button onclick="find()">Search</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>BookID</th>
+                <th>Title</th>    
+                <th>Genre</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="rows">
+
+        </tbody>
+    </table>
+</body>
+<script src="{{url_for('static', filename='../static/scripts/search.js')}}"></script>
+</html>
